@@ -1,4 +1,4 @@
-site_name: RAG Learning
+site_name: AI Platform Models Cookbook
 theme:
   name: material
   features:
@@ -29,46 +29,19 @@ markdown_extensions:
   - pymdownx.superfences
 
 nav:
-  - 'Home': index.md
-  - 'Prerequisites': 'prerequisites.md'
-  - 'Project Overview': 'proejct-overview.md'
-  - 'Get Familiar With LangChain':
-      - 'Introduction': langchain/introduction.md
-      - 'Chat Models': langchain/chat_model.md
-      - 'Prompt Templates': langchain/prompt_template.md
-      - 'Chains and LangChain Expression Language (LCEL)': langchain/lcel.md
-      - 'Retrieval Objects': langchain/retrieval_objects.md
-      - 'Agents': langchain/agents.md
-  - 'Understand the Business Requirements and Data':
-      - 'Introduction': business/business.md
-      - 'Understand the Problem and Requirements': business/problem_requirements.md
-      - 'Explore the Available Data': business/data.md
-      - 'Design the Chatbot': business/design_chatbot.md
-  - 'Set Up a Neo4j Graph Database':
-      - 'Introduction': neo4j/introduction.md
-      - 'A Brief Overview of Graph Databases': neo4j/overview.md
-      - 'Create a Neo4j Account and AuraDB Instance': neo4j/setup.md
-      - 'Design the Hospital System Graph Database': neo4j/design_graphdb.md
-      - 'Upload Data to Neo4j': neo4j/upload_data.md
-      - 'Query the Hospital System Graph': neo4j/query.md
-  - 'Build a Graph RAG Chatbot in LangChain':
-      - 'Introduction': rag_chatbot/introduction.md
-      - 'Create a Neo4j Vector Chain': rag_chatbot/neo_vector_chain.md
-      - 'Create a Neo4j Cypher Chain': rag_chatbot/neo_cypher_chain.md
-      - 'Create Wait Time Functions': rag_chatbot/wait_time.md
-      - 'Create the Chatbot Agent': rag_chatbot/chat_agent.md
-  - 'Deploy the LangChain Agent':
-      - 'Introduction': deployment/introduction.md
-      - 'Serve the Agent With FastAPI': deployment/fastapi.md
-      - 'Create a Chat UI With Streamlit': deployment/chat_ui.md
-      - 'Orchestrate the Project With Docker Compose': deployment/orck.md
-  - 'Conclusion': conclusion.md
+  - "Main Page": index.md
+  - "Statistics": statistics/wip.md
+  - "Maths": maths/wip.md
+  - "Classification": classification/wip.md
+  - "Regression": regression/wip.md
+  - "Deeplearning": deeplearning/wip.md
+  - "NLP": nlp/wip.md
 
-repo_url: https://github.com/GAmaranathaReddy/LLM-RAG-Chatbot
-repo_name: G AmaranathaReddy/LLM-RAG-Chatbot
+repo_url: https://github.com/GAmaranathaReddy/ai-learning
+repo_name: G AmaranathaReddy/ai-learning
 edit_uri: /edit/main/docs/
 
-site_url: !!python/object/apply:os.getenv ['GITHUB_PAGES_URL', '']
+site_url: !!python/object/apply:os.getenv ["GITHUB_PAGES_URL", ""]
 
 plugins:
   - search
@@ -76,11 +49,11 @@ plugins:
       enable_creation_date: true
       type: custom
       timezone: UTC
-      custom_format: '%Y-%m-%d %H:%M:%S %Z'
+      custom_format: "%Y-%m-%d %H:%M:%S %Z"
       fallback_to_build_date: true
   - git-authors
   - tags:
       tags_file: tags.md
 
 watch:
-  - 'doc_themes'
+  - "doc_themes"
