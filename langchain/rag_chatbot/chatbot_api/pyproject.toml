@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "chatbot_api"
+version = "0.1.0"
+description = "RAG Chatbot exmpales"
+authors = ["I552839 <amaranatha.reddy.gowni@sap.com>"]
+
+[tool.poetry.dependencies]
+asyncio="^3.4.3"
+fastapi="^0.109.0"
+langchain="^0.1.0"
+langchain-openai="^0.0.2"
+langchainhub="^0.1.14"
+neo4j="^5.14.1"
+numpy="^1.26.2"
+openai="^1.7.2"
+opentelemetry-api="^1.22.0"
+pydantic="^2.5.1"
+uvicorn="^0.25.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.3.0"
+flake8 = "^7.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
