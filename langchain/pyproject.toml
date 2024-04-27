@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "lanchain"
+version = "0.1.0"
+description = "Langchain exmpales"
+authors = ["I552839 <amaranatha.reddy.gowni@sap.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+langchain = "^0.1.13"
+openai = "^1.14.3"
+langchain-openai = "^0.1.1"
+langchain-community = "^0.0.29"
+langchainhub = "^0.1.15"
+python-dotenv = "^1.0.1"
+chromadb = "^0.4.24"
+polars = {extras = ["all"], version = "^0.20.19"}
+neo4j = "^5.19.0"
+retry = "^0.9.2"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.3.0"
+flake8 = "^7.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
